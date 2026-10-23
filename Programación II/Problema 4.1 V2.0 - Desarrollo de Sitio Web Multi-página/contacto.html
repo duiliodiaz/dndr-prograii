@@ -1,0 +1,19 @@
+<!-- El atributo action define a DÓNDE se envían los datos. method="POST" define CÓMO se envían (ocultos en la petición) -->
+<form action="https://labsys.frc.utn.edu.ar/dds-express/eco" method="POST">
+    
+    <!-- Cada input debe tener su propio id, y su <label> debe apuntar a ese id usando 'for' -->
+    <div class="mb-3">
+        <label for="nombreCompleto" class="form-label">Nombre completo:</label>
+        <input type="text" class="form-control" id="nombreCompleto" name="nombreCompleto" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="correo" class="form-label">Correo electrónico:</label>
+        <!-- type="email" valida automáticamente que tenga un @ y un formato correcto -->
+        <input type="email" class="form-control" id="correo" name="correo" required>
+    </div>
+
+    <!-- Falta agregar: Teléfono, Mensaje (textarea), Opciones (select) y el botón submit -->
+    
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
